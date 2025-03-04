@@ -1,7 +1,16 @@
 export default function Home() {
         return (
                 <>
-                        <p>Lol</p>
+                        <h1
+                                className="
+                                        text-center
+                                        font-bold
+                                        text-5xl
+                                        mb-10
+                                "
+                        >
+                                Welcome!
+                        </h1>
                 </>
         );
 };

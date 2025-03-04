@@ -1,5 +1,3 @@
-import NavBar from "@/components/navBar/navBar";
-
 export default function root() {
         return (
                 <>             
@@ -8,9 +6,10 @@ export default function root() {
                                         text-center
                                         font-bold
                                         text-5xl
+                                        mb-10
                                 "
                         >
-                                Welcome!
+                                Welcome administrator!
                         </h1>
                         {
                         /*
