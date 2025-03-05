@@ -1,4 +1,5 @@
 // import React from "react";
+import classNames from "classnames";
 import Link from "next/link";
 
 // Type variables
@@ -17,8 +18,8 @@ const NAVITEM: React.FC<NavItemProps> = ({
                         content-center
                         text-center
                         bg-gray-400
-                        h-12
-                        w-24
+                        h-14
+                        w-28
                         rounded-xl
                         duration-200
                         hover:shadow-xs
@@ -37,7 +38,8 @@ export default function HNavBar() {
         return (
                 <nav
                         className="
-                                h-14
+                                h-18
+                                w-[60%]
                                 content-center
                                 bg-red-600
                                 rounded-2xl
@@ -47,9 +49,15 @@ export default function HNavBar() {
                                 mb-6
                                 shadow-md
                                 shadow-gray-500
+                                place-self-center
                         "
                 >
                         {/* Using defined button */}
+                        <NAVITEM
+                                href="/"
+                        >
+                                Memoirs.app
+                        </NAVITEM>
                         <NAVITEM
                                 href="/home"
                         >
@@ -60,11 +68,11 @@ export default function HNavBar() {
                         >
                                 My notes
                         </NAVITEM>
-                        {
-                        /* 
-                                create Logout button 
-                        */
-                        }
+                        <NAVITEM
+                                href="/"
+                        >
+                                Log out
+                        </NAVITEM>
                 </nav>
         );
 };

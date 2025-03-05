@@ -14,6 +14,7 @@ const FOOTERITEM: React.FC<FootItem> = ({
                         text-gray-50
                         hover:underline
                         hover:underline-offset-4
+                        text-lg
                 "
         >
                 {children}
@@ -42,6 +43,9 @@ export default function Footer() {
                                         Website created by&nbsp;
                                         <Link 
                                                 href="https://github.com/MatyasSykorka"
+                                                className="
+                                                        hover:text-yellow-500
+                                                "
                                         >
                                                 Maty
                                         </Link>
@@ -51,6 +55,9 @@ export default function Footer() {
                         <FOOTERITEM>
                                 <Link 
                                         href="/about"
+                                        className="
+                                                hover:text-yellow-500
+                                        "
                                 >
                                         &nbsp;About&nbsp;
                                 </Link>

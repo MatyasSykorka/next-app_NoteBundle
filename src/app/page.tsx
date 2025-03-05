@@ -1,4 +1,4 @@
-import TITLETXT from "../components/Title/title";
+import TITLETXT from "../components/title/title";
 import SECITEM from "../components/selection/selection";
 
 export default function Root() {
