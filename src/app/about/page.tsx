@@ -1,18 +1,12 @@
+import Link from "next/link";
+import TITLETXT from "../../components/Title/title";
+
 export default function About() {
         return (
                 <>
-                        <h1
-                                className="
-                                        text-center
-                                        font-bold
-                                        text-5xl
-                                        mb-10
-                                "
-                        >
-                                <u>
-                                        About this app
-                                </u>
-                        </h1>
+                        <TITLETXT>
+                                About Memoirs
+                        </TITLETXT>
                         <div
                                 className="
                                         h-[28rem]
@@ -34,13 +28,25 @@ export default function About() {
                                         <strong>
                                                 Simple note app.
                                         </strong>
-                                        <br/>
-                                        This app is based on Next.js, PostgreSQL and (maybe Python).
+                                        &nbsp;Based on Next.js and PostgreSQL.
                                 </p>
                                 <br />
                                 <p>
-                                        If you want to see web source code, klick on name in footer.
+                                        If you want to see web source code, <br />
+                                        klick on name in footer.
                                 </p>
+                                <br /><br /><br /><br /><br />
+                                <Link 
+                                        href="/"
+                                        className="
+                                                duration-450
+                                                hover:font-bold
+                                                hover:text-2xl
+                                                
+                                        "
+                                >
+                                        Click to retun to the home page.
+                                </Link>
                         </div>
                 </>
         );

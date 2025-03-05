@@ -1,10 +1,10 @@
-import TITLETXT from "../components/Title/title";
+import TITLETXT from "../../../components/Title/title";
 
-export default function Root() {
+export default function Home() {
         return (
                 <>
                         <TITLETXT>
-                                Memoirs app
+                                Welcome!
                         </TITLETXT>
                 </>
         );

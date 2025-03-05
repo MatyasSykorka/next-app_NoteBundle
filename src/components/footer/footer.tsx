@@ -26,13 +26,13 @@ export default function Footer() {
                                 "
                         >
                                 <p>
-                                        Website created by 
+                                        Website created by&nbsp;
                                         <Link 
                                                 href="https://github.com/MatyasSykorka"
                                         >
                                                 Maty
                                         </Link>
-                                         :)
+                                        &nbsp;:)
                                 </p>
                         </ul>
                         <ul
@@ -48,7 +48,7 @@ export default function Footer() {
                                 <Link 
                                         href="/about"
                                 >
-                                         About 
+                                        &nbsp;About&nbsp;
                                 </Link>
                         </ul>
                 </footer>

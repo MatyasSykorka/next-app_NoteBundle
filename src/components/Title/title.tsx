@@ -1,0 +1,25 @@
+// Type variables
+interface TitleProps {
+        children: string;
+};
+
+// Define button design in navigation bar
+const TITLETXT : React.FC<TitleProps> = ({
+        children
+}) => (
+        <>
+                <h1
+                        className="
+                                text-center
+                                font-bold
+                                text-5xl
+                                mb-14
+                                mt-22
+                        "
+                >
+                        {children}
+                </h1>
+        </>
+);
+
+export default TITLETXT;

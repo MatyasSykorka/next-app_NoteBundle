@@ -1,10 +1,10 @@
-import TITLETXT from "../components/Title/title";
+import TITLETXT from "@/components/Title/title";
 
-export default function Root() {
+export default function ForgotPW() {
         return (
                 <>
                         <TITLETXT>
-                                Memoirs app
+                                Forgot password
                         </TITLETXT>
                 </>
         );
