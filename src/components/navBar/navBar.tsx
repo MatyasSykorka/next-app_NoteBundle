@@ -33,7 +33,7 @@ const NAVITEM: React.FC<NavItemProps> = ({
 );
 
 // creating navigation bar
-export default function NavBar() {
+export default function HNavBar() {
         return (
                 <nav
                         className="

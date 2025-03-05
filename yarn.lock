@@ -7,6 +7,19 @@
   resolved "https://registry.npmjs.org/@alloc/quick-lru/-/quick-lru-5.2.0.tgz#7bf68b20c0a350f936915fcae06f58e32007ce30"
   integrity sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==
 
+"@auth/core@0.37.2":
+  version "0.37.2"
+  resolved "https://registry.npmjs.org/@auth/core/-/core-0.37.2.tgz#0db8a94a076846bd88eb7f9273618513e2285cb2"
+  integrity sha512-kUvzyvkcd6h1vpeMAojK2y7+PAV5H+0Cc9+ZlKYDFhDY31AlvsB+GW5vNO4qE3Y07KeQgvNO9U0QUx/fN62kBw==
+  dependencies:
+    "@panva/hkdf" "^1.2.1"
+    "@types/cookie" "0.6.0"
+    cookie "0.7.1"
+    jose "^5.9.3"
+    oauth4webapi "^3.0.0"
+    preact "10.11.3"
+    preact-render-to-string "5.2.3"
+
 "@babel/runtime@7.1.2":
   version "7.1.2"
   resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.1.2.tgz#81c89935f4647706fc54541145e6b4ecfef4b8e3"
@@ -315,6 +328,11 @@
   resolved "https://registry.npmjs.org/@nolyfill/is-core-module/-/is-core-module-1.0.39.tgz#3dc35ba0f1e66b403c00b39344f870298ebb1c8e"
   integrity sha512-nn5ozdjYQpUCZlWGuxcJY/KpxkWQs4DcbMCmKojjyrYDEAGy4Ce19NN4v5MduafTwJlbKc99UA8YhSVqq9yPZA==
 
+"@panva/hkdf@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.npmjs.org/@panva/hkdf/-/hkdf-1.2.1.tgz#cb0d111ef700136f4580349ff0226bf25c853f23"
+  integrity sha512-6oclG6Y3PiDFcoyk8srjLfVKyMfVCKJ27JwNPViuXziFpmdz+MZnZN/aKY0JGXgYuO/VghU0jcOAZgWXZ1Dmrw==
+
 "@rtsao/scc@^1.1.0":
   version "1.1.0"
   resolved "https://registry.npmjs.org/@rtsao/scc/-/scc-1.1.0.tgz#927dd2fae9bc3361403ac2c7a00c32ddce9ad7e8"
@@ -429,6 +447,11 @@
     lightningcss "^1.29.1"
     postcss "^8.4.41"
     tailwindcss "4.0.9"
+
+"@types/cookie@0.6.0":
+  version "0.6.0"
+  resolved "https://registry.npmjs.org/@types/cookie/-/cookie-0.6.0.tgz#eac397f28bf1d6ae0ae081363eca2f425bedf0d5"
+  integrity sha512-4Kh9a6B2bQciAhf7FSuMRRkUWecJgJu9nPnx3yzpsfXX/c50REIqpHY4C82bXP90qrLtXtkDxTZosYO3UpOwlA==
 
 "@types/estree@^1.0.6":
   version "1.0.6"
@@ -1031,6 +1054,11 @@ cookie@0.3.1:
   version "0.3.1"
   resolved "https://registry.npmjs.org/cookie/-/cookie-0.3.1.tgz#e7e0a1f9ef43b4c8ba925c5c5a96e806d16873bb"
   integrity sha512-+IJOX0OqlHCszo2mBUq+SrEbCj6w7Kpffqx60zYbPTFaO4+yYgRjHwcZNpWvaTylDHaV7PPmBHzSecZiMhtPgw==
+
+cookie@0.7.1:
+  version "0.7.1"
+  resolved "https://registry.npmjs.org/cookie/-/cookie-0.7.1.tgz#2f73c42142d5d5cf71310a74fc4ae61670e5dbc9"
+  integrity sha512-6DnInpx7SJ2AK3+CTUE/ZM0vWTUboZCegxhC2xiIydHR9jNuTAASBrfEpHhiGOZw/nX51bHt6YQl8jsGo4y/0w==
 
 core-js@^2.4.0:
   version "2.6.12"
@@ -2234,6 +2262,11 @@ jiti@^2.4.2:
   resolved "https://registry.npmjs.org/jiti/-/jiti-2.4.2.tgz#d19b7732ebb6116b06e2038da74a55366faef560"
   integrity sha512-rg9zJN+G4n2nfJl5MW3BMygZX56zKPNVEYYqq7adpmMh4Jn2QNEwhvQlFy6jPVdcod7txZtKHWnyZiA3a0zP7A==
 
+jose@^5.9.3:
+  version "5.10.0"
+  resolved "https://registry.npmjs.org/jose/-/jose-5.10.0.tgz#c37346a099d6467c401351a9a0c2161e0f52c4be"
+  integrity sha512-s+3Al/p9g32Iq+oqXxkW//7jk2Vig6FF1CFqzVXoTUXt2qz89YWbL+OwS17NFYEvxC35n0FKeGO2LGYSxeM2Gg==
+
 "js-tokens@^3.0.0 || ^4.0.0":
   version "4.0.0"
   resolved "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -2607,6 +2640,13 @@ negotiator@0.6.3:
   resolved "https://registry.npmjs.org/negotiator/-/negotiator-0.6.3.tgz#58e323a72fedc0d6f9cd4d31fe49f51479590ccd"
   integrity sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==
 
+next-auth@^5.0.0-beta.25:
+  version "5.0.0-beta.25"
+  resolved "https://registry.npmjs.org/next-auth/-/next-auth-5.0.0-beta.25.tgz#3a9f9734e1d8fa5ced545360f1afc24862cb92d5"
+  integrity sha512-2dJJw1sHQl2qxCrRk+KTQbeH+izFbGFPuJj5eGgBZFYyiYYtvlrBeUw1E/OJJxTRjuxbSYGnCTkUIRsIIW0bog==
+  dependencies:
+    "@auth/core" "0.37.2"
+
 next-themes@^0.4.4:
   version "0.4.4"
   resolved "https://registry.npmjs.org/next-themes/-/next-themes-0.4.4.tgz#ce6f68a4af543821bbc4755b59c0d3ced55c2d13"
@@ -2651,6 +2691,11 @@ node-statsd@0.1.1:
   version "0.1.1"
   resolved "https://registry.npmjs.org/node-statsd/-/node-statsd-0.1.1.tgz#27a59348763d0af7a037ac2a031fef3f051013d3"
   integrity sha512-QDf6R8VXF56QVe1boek8an/Rb3rSNaxoFWb7Elpsv2m1+Noua1yy0F1FpKpK5VluF8oymWM4w764A4KsYL4pDg==
+
+oauth4webapi@^3.0.0:
+  version "3.3.0"
+  resolved "https://registry.npmjs.org/oauth4webapi/-/oauth4webapi-3.3.0.tgz#44d64422dff63e195e34babaa64c2b8459b52059"
+  integrity sha512-ZlozhPlFfobzh3hB72gnBFLjXpugl/dljz1fJSRdqaV2r3D5dmi5lg2QWI0LmUYuazmE+b5exsloEv6toUtw9g==
 
 object-assign@^4, object-assign@^4.1.1:
   version "4.1.1"
@@ -2852,10 +2897,27 @@ postcss@^8.4.41, postcss@^8.5.3:
     picocolors "^1.1.1"
     source-map-js "^1.2.1"
 
+preact-render-to-string@5.2.3:
+  version "5.2.3"
+  resolved "https://registry.npmjs.org/preact-render-to-string/-/preact-render-to-string-5.2.3.tgz#23d17376182af720b1060d5a4099843c7fe92fe4"
+  integrity sha512-aPDxUn5o3GhWdtJtW0svRC2SS/l8D9MAgo2+AWml+BhDImb27ALf04Q2d+AHqUUOc6RdSXFIBVa2gxzgMKgtZA==
+  dependencies:
+    pretty-format "^3.8.0"
+
+preact@10.11.3:
+  version "10.11.3"
+  resolved "https://registry.npmjs.org/preact/-/preact-10.11.3.tgz#8a7e4ba19d3992c488b0785afcc0f8aa13c78d19"
+  integrity sha512-eY93IVpod/zG3uMF22Unl8h9KkrcKIRs2EGar8hwLZZDU1lkjph303V9HZBwufh2s736U6VXuhD109LYqPoffg==
+
 prelude-ls@^1.2.1:
   version "1.2.1"
   resolved "https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
+
+pretty-format@^3.8.0:
+  version "3.8.0"
+  resolved "https://registry.npmjs.org/pretty-format/-/pretty-format-3.8.0.tgz#bfbed56d5e9a776645f4b1ff7aa1a3ac4fa3c385"
+  integrity sha512-WuxUnVtlWL1OfZFQFuqvnvs6MiAGk9UNsBostyBOB0Is9wb5uRESevA6rnl/rkksXaGX3GzZhPup5d6Vp1nFew==
 
 processenv@1.1.0:
   version "1.1.0"

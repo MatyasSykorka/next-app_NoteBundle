@@ -36,7 +36,7 @@ export default function NotFound() {
                                 </p>
                                 <br />
                                 <p>
-                                        You can go back to 
+                                        You can go back to&nbsp;
                                         <Link 
                                                 href="/home"
                                                 className="

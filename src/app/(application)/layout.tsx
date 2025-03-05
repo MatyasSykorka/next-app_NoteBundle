@@ -1,5 +1,5 @@
 import '../globals.css';
-import NavBar from "../../components/navBar/navBar";
+import HNavBar from "../../components/navBar/navBar";
 import Footer from "../../components/footer/footer";
 
 
@@ -16,7 +16,7 @@ export default function AppLayout({
         return (
                 <html lang="en">
                         <body>
-                                <NavBar />
+                                <HNavBar />
                                 {children}
                                 <Footer />
                         </body>

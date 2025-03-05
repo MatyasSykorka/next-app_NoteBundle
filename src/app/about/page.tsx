@@ -5,7 +5,7 @@ export default function About() {
         return (
                 <>
                         <TITLETXT>
-                                About Memoirs
+                                About Memoirs.app
                         </TITLETXT>
                         <div
                                 className="

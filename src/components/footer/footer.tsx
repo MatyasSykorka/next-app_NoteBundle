@@ -1,5 +1,26 @@
 import Link from "next/link";
 
+interface FootItem {
+        children: React.ReactNode;
+};
+
+const FOOTERITEM: React.FC<FootItem> = ({
+        children
+}) => (
+        <ul
+                className="
+                        self-center
+                        font-bold
+                        text-gray-50
+                        hover:underline
+                        hover:underline-offset-4
+                "
+        >
+                {children}
+        </ul>
+);
+
+
 export default function Footer() {
         return (
                 <footer
@@ -16,15 +37,7 @@ export default function Footer() {
                                 justify-between
                         "
                 >
-                        <ul
-                                className="
-                                        self-center
-                                        font-bold
-                                        text-gray-50
-                                        hover:underline
-                                        hover:underline-offset-4
-                                "
-                        >
+                        <FOOTERITEM>
                                 <p>
                                         Website created by&nbsp;
                                         <Link 
@@ -34,23 +47,14 @@ export default function Footer() {
                                         </Link>
                                         &nbsp;:)
                                 </p>
-                        </ul>
-                        <ul
-                                className="
-                                        font-bold
-                                        self-center
-                                        text-yellow-300
-                                        bg-transparent
-                                        hover:underline
-                                        hover:underline-offset-4
-                                "
-                        >
+                        </FOOTERITEM>
+                        <FOOTERITEM>
                                 <Link 
                                         href="/about"
                                 >
                                         &nbsp;About&nbsp;
                                 </Link>
-                        </ul>
+                        </FOOTERITEM>
                 </footer>
         );
 };
