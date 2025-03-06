@@ -1,5 +1,6 @@
 import TITLETXT from "../../../components/title/title";
 
+
 interface SettingItem {
         children: React.ReactNode;
 };
@@ -48,7 +49,7 @@ export default function Notes() {
                                                 border-black
                                                 rounded-2xl
                                                 w-[100rem]
-                                                h-[60rem]
+                                                min-h-[60rem]
                                                 place-self-center
                                                 bg-amber-200
                                                 text-center
@@ -60,27 +61,44 @@ export default function Notes() {
                                                 mr-4
                                         "
                                 >
+                                        <input 
+                                                type="button" 
+                                                value="New note" 
+                                                className="
+                                                        bg-green-300
+                                                        h-12
+                                                        w-30
+                                                        mb-2
+                                                        rounded-md
+                                                        font-bold
+                                                "
+                                        />
                                         <div
                                                 className="
                                                         border-1
-                                                        h-[55rem]
+                                                        min-h-[55rem]
+                                                        rounded-lg
                                                 "
                                         >
                                                 table
                                         </div>
                                 </div>
-                                <div
-                                        className="
-                                                ml-4
-                                                border-2
-                                                rounded-2xl
-                                                p-4
-                                                h-[24rem]
-                                                w-1/4
-                                                bg-gray-300
-                                                text-center
-                                        "
-                                >
+                                {
+                                /*
+                                        <div
+                                                className="
+                                                        ml-4
+                                                        border-2
+                                                        rounded-2xl
+                                                        p-4
+                                                        h-[24rem]
+                                                        w-1/4
+                                                        bg-gray-300
+                                                        text-center
+                                                        shadow-gray-600
+                                                        shadow-lg
+                                                "
+                                        >
                                         <p
                                                 className="
                                                         text-2xl
@@ -92,12 +110,14 @@ export default function Notes() {
                                                 className="
                                                         flex
                                                 "
-                                        >
+                                                >
                                                 <SETTITEM>
                                                         New note
                                                 </SETTITEM>
                                         </div>
                                 </div>
+                                */
+                                }
                         </main>
                 </>
         );

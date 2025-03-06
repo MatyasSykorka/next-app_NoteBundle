@@ -1,6 +1,6 @@
 // import React from "react";
-import classNames from "classnames";
 import Link from "next/link";
+
 
 // Type variables
 interface NavItemProps {
@@ -56,7 +56,7 @@ export default function HNavBar() {
                         <NAVITEM
                                 href="/"
                         >
-                                Memoirs.app
+                                Note bundle
                         </NAVITEM>
                         <NAVITEM
                                 href="/home"

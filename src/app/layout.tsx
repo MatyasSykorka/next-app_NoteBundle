@@ -1,8 +1,10 @@
 import './globals.css';
+
 import Footer from '../components/footer/footer';
 
+
 export const metadata = {
-        title: 'Memoirs',
+        title: 'Memoirs.app',
         description: 'Note app by Maty',
 };
 

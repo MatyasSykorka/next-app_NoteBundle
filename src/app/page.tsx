@@ -1,37 +1,61 @@
 import TITLETXT from "../components/title/title";
 import SECITEM from "../components/selection/selection";
 
+
 export default function Root() {
         return (
                 <>
                         <TITLETXT>
-                                Memoirs.app
+                                Note bundle
                         </TITLETXT>
-                        <section
+                        <main
                                 className="
                                         border-1
                                         border-black
                                         bg-yellow-200
                                         w-1/3
                                         place-self-center
-                                        rounded-2xl
+                                        rounded-sm
                                         h-100
                                         p-8
-                                        flex
                                         text-center
-                                        content-center
                                         justify-center
                                         shadow-gray-600
                                         shadow-lg
                                 "
                         >
-                                <SECITEM href="/login">
-                                        Login
-                                </SECITEM>
-                                <SECITEM href="/register">
-                                        Register
-                                </SECITEM>
-                        </section>
+                                <article
+                                        className="
+                                                flex
+                                                place-self-center
+                                                mb-7
+                                        "
+                                >
+                                        <p
+                                                className="
+                                                        text-2xl
+                                                        underline
+                                                        underline-offset-4
+                                                "
+                                        >
+                                                &nbsp;Simple and easy to write down your ideas and notes! :)&nbsp;
+                                        </p>
+                                </article>
+                                <section
+                                        className="
+                                                flex
+                                                place-self-center
+                                        "
+                                >
+                                        <SECITEM href="/login">
+                                                Login
+                                        </SECITEM>
+                                        <SECITEM href="/register">
+                                                Register
+                                        </SECITEM>
+                                </section>
+                                
+                        </main>
                 </>
         );
 };

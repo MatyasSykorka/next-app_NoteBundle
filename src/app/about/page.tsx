@@ -1,11 +1,13 @@
 import Link from "next/link";
+
 import TITLETXT from "../../components/title/title";
+
 
 export default function About() {
         return (
                 <>
                         <TITLETXT>
-                                About Memoirs.app
+                                About Note bundle
                         </TITLETXT>
                         <div
                                 className="

@@ -23,7 +23,7 @@ const SECITEM: React.FC<SelectItemProps> = ({
                         duration-250
                         hover:font-bold
                         hover:shadow-xl
-                        hover:shadow-black
+                        hover:shadow-black/70
                 "
         >
                 {children}

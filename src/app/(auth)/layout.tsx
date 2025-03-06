@@ -1,10 +1,10 @@
 import '../globals.css';
-import NavBar from "../../components/navBar/navBar";
+
 import Footer from "../../components/footer/footer";
 
 
 export const metadata = {
-        title: 'Note app - Auth',
+        title: 'Memoirs.app - auth',
         description: 'Note app by Maty',
 };
 
@@ -14,11 +14,9 @@ export default function AuthLayout({
         children: React.ReactNode
 }) {
         return (
-                <html lang="en">
-                        <body>
-                                {children}
-                                <Footer />
-                        </body>
-                </html>
+                <>
+                        {children}
+                        <Footer />
+                </>
         );
 };
