@@ -29,7 +29,9 @@ export default function Home() {
                                         Last edited notes
                                 </p>
                                 <div
-                                        className=""
+                                        className="
+                                                border-1
+                                        "
                                 >
                                         <p>
                                                 board

@@ -51,11 +51,11 @@ export default function Notes() {
                                                 w-[100rem]
                                                 min-h-[60rem]
                                                 place-self-center
-                                                bg-amber-200
+                                                bg-amber-100
                                                 text-center
                                                 content-center
                                                 shadow-lg
-                                                shadow-amber-900
+                                                shadow-black/60
                                                 pl-10
                                                 pr-10
                                                 mr-4
@@ -85,20 +85,20 @@ export default function Notes() {
                                 </div>
                                 {
                                 /*
-                                        <div
-                                                className="
-                                                        ml-4
-                                                        border-2
-                                                        rounded-2xl
-                                                        p-4
-                                                        h-[24rem]
-                                                        w-1/4
-                                                        bg-gray-300
-                                                        text-center
-                                                        shadow-gray-600
-                                                        shadow-lg
-                                                "
-                                        >
+                                <div
+                                        className="
+                                                ml-4
+                                                border-2
+                                                rounded-2xl
+                                                p-4
+                                                h-[24rem]
+                                                w-1/4
+                                                bg-gray-300
+                                                text-center
+                                                shadow-gray-600
+                                                shadow-lg
+                                        "
+                                >
                                         <p
                                                 className="
                                                         text-2xl
@@ -115,7 +115,7 @@ export default function Notes() {
                                                         New note
                                                 </SETTITEM>
                                         </div>
-                                </div>
+                                </div
                                 */
                                 }
                         </main>
