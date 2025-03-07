@@ -9,6 +9,7 @@ export default function NotFound() {
                                         text-center
                                         font-bold
                                         text-5xl
+                                        mt-40
                                         mb-10
                                         font-mono
                                 "
@@ -39,12 +40,12 @@ export default function NotFound() {
                                 <p>
                                         You can go back to&nbsp;
                                         <Link 
-                                                href="/home"
+                                                href="/"
                                                 className="
                                                         font-bold
                                                 "
                                         >
-                                                Home page
+                                                Main page
                                         </Link>
                                         .
                                 </p>

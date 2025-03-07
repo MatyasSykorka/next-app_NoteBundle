@@ -6,6 +6,11 @@ import FORMBTTN from "@/components/formStuff/formBttn";
 import LINKBTTN from "@/components/formStuff/linkBttn";
 
 
+export const metadata = {
+        title: 'Note bundle - Login',
+        description: 'Note app by Maty',
+};
+
 export default function Login() {
         return (
                 <main>

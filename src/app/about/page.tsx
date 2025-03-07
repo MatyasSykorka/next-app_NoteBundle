@@ -26,10 +26,10 @@ export default function About() {
                                         shadow-gray-600
                                 "
                         >
-                                <p>
-                                        <strong>
+                                <p
+                                        className="font-bold"
+                                >
                                                 Simple note app.
-                                        </strong>
                                         &nbsp;Based on Next.js and PostgreSQL.
                                 </p>
                                 <br />

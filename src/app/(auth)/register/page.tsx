@@ -1,4 +1,3 @@
-"use client"
 import Form from "next/form";
 
 import TITLETXT from "@/components/title/title";
@@ -6,6 +5,11 @@ import FORMITEM from "@/components/formStuff/formLabel&Input";
 import FORMBTTN from "@/components/formStuff/formBttn";
 import LINKBTTN from "@/components/formStuff/linkBttn";
 
+
+export const metadata = {
+        title: 'Note bundle - Register',
+        description: 'Note app by Maty',
+};
 
 export default function Register() {
         return (

@@ -5,7 +5,7 @@ import Footer from "../../components/footer/footer";
 
 
 export const metadata = {
-        title: 'Memoirs.app',
+        title: 'Note bundle',
         description: 'Note app by Maty',
 };
 

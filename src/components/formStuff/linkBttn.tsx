@@ -22,6 +22,7 @@ const LINKBTTN: React.FC<homeBttn> = ({
                         content-center
                         text-center
                         text-xl
+                        duration-50
                         hover:font-bold
                         hover:w-54
                         hover:h-13

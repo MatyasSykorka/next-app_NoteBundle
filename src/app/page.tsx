@@ -41,7 +41,7 @@ export default function Root() {
                                                 &nbsp;Simple and easy to write down your ideas and notes! :)&nbsp;
                                         </p>
                                 </article>
-                                <section
+                                <menu
                                         className="
                                                 flex
                                                 place-self-center
@@ -53,7 +53,7 @@ export default function Root() {
                                         <SECITEM href="/register">
                                                 Register
                                         </SECITEM>
-                                </section>
+                                </menu>
                                 
                         </main>
                 </>

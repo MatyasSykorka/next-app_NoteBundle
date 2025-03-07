@@ -48,7 +48,7 @@ export default function HNavBar() {
                                 flex
                                 mb-6
                                 shadow-md
-                                shadow-gray-500
+                                shadow-black/50
                                 place-self-center
                         "
                 >
@@ -67,6 +67,11 @@ export default function HNavBar() {
                                 href="/my-notes"
                         >
                                 My notes
+                        </NAVITEM>
+                        <NAVITEM
+                                href="/user"
+                        >
+                                "Username"
                         </NAVITEM>
                         <NAVITEM
                                 href="/"

@@ -1,6 +1,12 @@
 import TITLETXT from "../../../components/title/title";
 
 
+export const metadata = {
+        title: 'Note bundle - Home',
+        description: 'Note app by Maty',
+};
+
+
 export default function Home() {
         return (
                 <>

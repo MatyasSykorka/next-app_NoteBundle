@@ -5,6 +5,11 @@ import FORMBTTN from "@/components/formStuff/formBttn";
 import FORMITEM from "@/components/formStuff/formLabel&Input";
 import LINKBTTN from "@/components/formStuff/linkBttn";
 
+export const metadata = {
+        title: 'Note bundle - forget password',
+        description: 'Note app by Maty',
+};
+
 export default function ForgotPW() {
         return (
                 <main>
