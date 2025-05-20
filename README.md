@@ -4,7 +4,6 @@
 
 ###### Missing web authentication, database link, ...
 \
-\
 Next.js app for writing notes. You can edit, delete, set priority and finish them.
 \
 \
