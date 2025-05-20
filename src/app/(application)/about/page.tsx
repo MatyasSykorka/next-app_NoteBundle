@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import TITLETXT from "../../components/title/title";
+import TITLETXT from "../../../components/title/title";
 
 
 export default function About() {
@@ -33,9 +33,16 @@ export default function About() {
                                         &nbsp;Based on Next.js and PostgreSQL.
                                 </p>
                                 <br />
+                                <p
+                                        className="underline"
+                                >
+                                        This app was created in school practice&nbsp;
+                                        <strong>
+                                                (2025).
+                                        </strong>
+                                </p>
                                 <p>
-                                        If you want to see web source code, <br />
-                                        klick on name in footer.
+                                        If you want to see web source code, klick on name in footer.
                                 </p>
                                 <br /><br /><br /><br /><br />
                                 <Link 

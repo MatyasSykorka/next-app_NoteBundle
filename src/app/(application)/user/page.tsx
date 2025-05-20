@@ -96,7 +96,7 @@ export default function user() {
                                         "
                                 >
                                         <Link 
-                                                href="/change-fullname"
+                                                href="/user/change-fullname"
                                                 className="
                                                         place-self-center
                                                         content-center
