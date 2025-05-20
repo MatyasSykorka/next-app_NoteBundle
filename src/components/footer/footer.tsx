@@ -47,7 +47,7 @@ export default function Footer() {
                                                         hover:text-yellow-500
                                                 "
                                         >
-                                                Maty
+                                                Matyáš Sýkora
                                         </Link>
                                         &nbsp;:)
                                 </p>
