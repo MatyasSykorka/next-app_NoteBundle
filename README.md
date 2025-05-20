@@ -1,4 +1,4 @@
-# Note Bundle - Next.js app
+# About Note Bundle
 
 ### This web app is still in development!
 
