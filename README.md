@@ -1,7 +1,10 @@
-# To do list Next.js app
+# Note Bundle - Next.js app
 
 ### This web app is still in development!
 
+###### Missing web authentication, database link, ...
+\
+\
 Next.js app for writing notes. You can edit, delete, set priority and finish them.
 \
 \
