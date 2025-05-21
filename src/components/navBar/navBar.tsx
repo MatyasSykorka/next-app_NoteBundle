@@ -53,11 +53,11 @@ export default function HNavBar() {
                         "
                 >
                         {/* Using defined button */}
-                        <NAVITEM
+                        {/* <NAVITEM
                                 href="/"
                         >
                                 Note bundle
-                        </NAVITEM>
+                        </NAVITEM> */}
                         <NAVITEM
                                 href="/home"
                         >
@@ -66,7 +66,7 @@ export default function HNavBar() {
                         <NAVITEM
                                 href="/my-notes"
                         >
-                                My notes
+                                Note bundle
                         </NAVITEM>
                         <NAVITEM
                                 href="/user"

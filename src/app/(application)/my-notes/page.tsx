@@ -1,20 +1,45 @@
+'use client';
+import React from "react";
 import TITLETXT from "../../../components/title/title";
+import NewNote from "@/components/modal/newNote";
+import DeleteNote from "@/components/modal/deleteNote";
+import DeleteAllNotes from "@/components/modal/deleteAllNotes";
+import DeleteFinishedNotes from "@/components/modal/deleteFinishedNotes";
 
-
+/*
 export const metadata = {
         title: 'Note bundle - Notes',
         description: 'Note app by Maty',
 };
+*/
 
+interface newNoteProps {
+        isVisible: boolean;
+};
 
-interface SettingItem {
+interface deleteNoteProps {
+        isVisibleII: boolean;
+};
+
+interface deleteAllNotesProps {
+        isVisibleIII: boolean;
+};
+
+interface deleteFinishedProps {
+        isVisibleIV: boolean;
+};
+
+interface SettingItem extends React.ButtonHTMLAttributes<HTMLButtonElement> {
         children: React.ReactNode;
 };
 
+
 const SETTITEM: React.FC<SettingItem> = ({
-        children
+        children,
+        ...buttonProps
 }) => (
-        <div
+        <button
+                {...buttonProps}
                 className="
                         border-1
                         border-black
@@ -32,11 +57,16 @@ const SETTITEM: React.FC<SettingItem> = ({
                 "
         >
                 {children}
-        </div>
+        </button>
 );
 
 
 export default function Notes() {
+        const [showNoteModal, setShowNoteModal] = React.useState(false);
+        const [showDeleteNoteModal, setShowDeleteNoteModal] = React.useState(false);
+        const [showDeleteAllNotesModal, setShowDeleteAllNotesModal] = React.useState(false);
+        const [showDeleteFinishedModal, setShowDeleteFinishedModal] = React.useState(false);
+
         return (
                 <>
                         <TITLETXT>
@@ -74,13 +104,20 @@ export default function Notes() {
                                                         flex
                                                 "
                                         >
-                                                <SETTITEM>
+                                                <SETTITEM
+                                                        onClick={ () => setShowNoteModal(true) }
+                                                >
                                                         New note
                                                 </SETTITEM>
-                                                <SETTITEM>
-                                                        Delete all finished notes
+                                                <SETTITEM
+                                                        onClick={ () => setShowDeleteFinishedModal(true) }
+                                                >
+                                                        Delete all <br/>
+                                                        finished notes
                                                 </SETTITEM>
-                                                <SETTITEM>
+                                                <SETTITEM
+                                                        onClick={ () => setShowDeleteAllNotesModal(true) }
+                                                >
                                                         Delete all notes
                                                 </SETTITEM>
                                         </div>
@@ -155,6 +192,7 @@ export default function Notes() {
                                                         <input 
                                                                 type="button" 
                                                                 value="X" 
+                                                                onClick={ () => setShowDeleteNoteModal(true) }
                                                                 className="
                                                                         bg-red-400
                                                                         w-6
@@ -180,6 +218,10 @@ export default function Notes() {
                                         </div>
                                 </div>
                         </main>
+                        <NewNote isVisible={showNoteModal} onClose={ () => {setShowNoteModal(false)} } />
+                        <DeleteNote isVisibleII={showDeleteNoteModal} onClose={ () => {setShowDeleteNoteModal(false)} } />
+                        <DeleteAllNotes isVisibleIII={showDeleteAllNotesModal} onClose={ () => {setShowDeleteAllNotesModal(false)} } />
+                        <DeleteFinishedNotes isVisibleIV={showDeleteFinishedModal} onClose={ () => {setShowDeleteFinishedModal(false)} } />
                 </>
         );
 };

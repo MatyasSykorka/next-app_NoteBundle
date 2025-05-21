@@ -1,20 +1,58 @@
+'use client';
 import Link from "next/link";
-
-
 import TITLETXT from "@/components/title/title";
 import LABELBOOK from "@/components/usersBook/label";
 import BTTNBOOK from "@/components/usersBook/bttnBook";
+import DeleteUser from "@/components/modal/DeleteUser";
+import { useState } from "react";
 
-
+/*
 export const metadata = {
         title: 'Note bundle - User "username"',
         description: 'Note app by Maty',
 };
+*/
 
+interface setDeleteUser {
+        isVisibleV: boolean;
+}
 
 interface labelBook {
         children: string; 
 };
+
+
+interface UserBttn extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+        children: React.ReactNode;
+};
+
+
+const USERBTTN: React.FC<UserBttn> = ({
+        children,
+        ...buttonProps
+}) => (
+        <button
+                {...buttonProps}
+                className="
+                        border-1
+                        border-black
+                        rounded-lg
+                        text-xl
+                        text-gray-50
+                        duration-250
+                        hover:font-bold
+                        bg-gray-600
+                        w-80
+                        h-20
+                        content-center
+                        m-3
+                        text-center
+                "
+        >
+                {children}
+        </button>
+);
+
 
 const P: React.FC<labelBook> = ({
         children
@@ -34,6 +72,8 @@ const P: React.FC<labelBook> = ({
 );
 
 export default function user() {
+        const [showDeleteUser, setShowDeleteUserModal] = useState(false);
+
         return (
                 <>
                         <TITLETXT>
@@ -113,9 +153,11 @@ export default function user() {
                                         >
                                                 Change full name
                                         </Link>
-                                        <BTTNBOOK />
+
+                                <BTTNBOOK />
                                 </menu>
                         </main>
+                        {/* <DeleteUser /> */}
                 </>
         );
 };
