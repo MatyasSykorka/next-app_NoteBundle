@@ -1,10 +1,10 @@
 'use client';
 import React from "react";
 import TITLETXT from "../../../components/title/title";
-import NewNote from "@/components/modal/newNote";
-import DeleteNote from "@/components/modal/deleteNote";
-import DeleteAllNotes from "@/components/modal/deleteAllNotes";
-import DeleteFinishedNotes from "@/components/modal/deleteFinishedNotes";
+import NewNote from "@/components/modal/NewNote";
+import DeleteNote from "@/components/modal/DeleteNote";
+import DeleteAllNotes from "@/components/modal/DeleteAllNotes";
+import DeleteFinishedNotes from "@/components/modal/DeleteFinishedNotes";
 
 /*
 export const metadata = {
