@@ -2,7 +2,7 @@
 import Link from "next/link";
 import TITLETXT from "@/components/title/title";
 import LABELBOOK from "@/components/usersBook/label";
-import BTTNBOOK from "@/components/usersBook/bttnBook";
+// import BTTNBOOK from "@/components/usersBook/bttnBook";
 import DeleteUser from "@/components/modal/DeleteUser";
 import { useState } from "react";
 
@@ -153,11 +153,27 @@ export default function user() {
                                         >
                                                 Change full name
                                         </Link>
-
-                                <BTTNBOOK />
+                                        <button 
+                                                onClick={ () => setShowDeleteUserModal(true) }
+                                                type="button"
+                                                className="
+                                                        place-self-center
+                                                        content-center
+                                                        justify-center
+                                                        bg-red-700
+                                                        rounded-md
+                                                        block
+                                                        text-center
+                                                        h-12
+                                                        w-68
+                                                        text-2xl
+                                                "
+                                        >
+                                                Delete my account
+                                        </button>
                                 </menu>
                         </main>
-                        {/* <DeleteUser /> */}
+                        <DeleteUser isVisibleV={showDeleteUser} onClose={ () => {setShowDeleteUserModal(false)} }/>
                 </>
         );
 };

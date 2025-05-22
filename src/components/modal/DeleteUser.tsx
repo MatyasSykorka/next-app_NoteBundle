@@ -14,7 +14,7 @@ const DeleteUser: React.FC<DeleteUserProps> = ({ isVisibleV, onClose }) => {
                                 fixed
                                 inset-0
                                 flex
-                                bg-red-700/80
+                                bg-black/50
                                 z-50
                                 backdrop-blur-sm
                                 items-center
@@ -65,7 +65,7 @@ const DeleteUser: React.FC<DeleteUserProps> = ({ isVisibleV, onClose }) => {
                                                 text-black
                                         "
                                 >
-                                        Delete all notes:
+                                        Delete this profile
                                 </h1>
                                 <div
                                         className="
@@ -82,7 +82,7 @@ const DeleteUser: React.FC<DeleteUserProps> = ({ isVisibleV, onClose }) => {
                                                         text-2xl
                                                 "
                                         >
-                                                Are you sure, you want to delete all your notes?
+                                                Are you sure, you want to delete your bundle?
                                         </p>
                                 </div>
                                 <button
@@ -92,7 +92,7 @@ const DeleteUser: React.FC<DeleteUserProps> = ({ isVisibleV, onClose }) => {
                                         className="
                                                 bg-red-600
                                                 h-10
-                                                w-40
+                                                w-70
                                                 rounded-xl
                                                 duration-200
                                                 place-self-center
@@ -101,7 +101,7 @@ const DeleteUser: React.FC<DeleteUserProps> = ({ isVisibleV, onClose }) => {
                                                 hover:text-white
                                         "
                                 >
-                                        Yes, delete them!
+                                        Yes, delete me and my bundle!
                                 </button>
                         </Form>
                 </div>

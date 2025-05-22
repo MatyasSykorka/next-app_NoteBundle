@@ -16,7 +16,8 @@ export default function About() {
                                         bg-yellow-200
                                         place-self-center
                                         place-items-center
-                                        p-2
+                                        text-center
+                                        p-5
                                         font-mono
                                         text-xl
                                         border-4
@@ -29,8 +30,7 @@ export default function About() {
                                 <p
                                         className="font-bold"
                                 >
-                                                Simple note app.
-                                        &nbsp;Based on Next.js and PostgreSQL.
+                                        Simple note app. Based on Next.js and PostgreSQL.
                                 </p>
                                 <br />
                                 <p
@@ -42,7 +42,7 @@ export default function About() {
                                         </strong>
                                 </p>
                                 <p>
-                                        If you want to see web source code, klick on name in footer.
+                                        If you want to see web source code, klick on my github username in&nbsp;footer.
                                 </p>
                                 <br /><br /><br /><br /><br />
                                 <Link 

@@ -21,7 +21,7 @@ export default function Login() {
                                 action=""
                                 className="
                                         w-1/3
-                                        h-150
+                                        h-180
                                         p-8
                                         bg-amber-200
                                         border-1
@@ -32,18 +32,27 @@ export default function Login() {
                                 "
                         >
                                 <FORMITEM
-                                        htmlFor="username"
+                                        htmlFor="actual_name"
                                         type="text"
-                                        name="username"
+                                        name="actual_name"
+                                        value="*your actual name*"
+                                        readOnly
                                 >
-                                        Username
+                                        Your actual name
                                 </FORMITEM>
                                 <FORMITEM
-                                        htmlFor="newStName"
+                                        htmlFor="f_name"
                                         type="text"
-                                        name="newFName"
+                                        name="f_name"
                                 >
-                                        Password
+                                        First name
+                                </FORMITEM>
+                                <FORMITEM
+                                        htmlFor="l_name"
+                                        type="text"
+                                        name="l_Name"
+                                >
+                                        Last name
                                 </FORMITEM>
                                 <FORMBTTN 
                                         value="Change my name"

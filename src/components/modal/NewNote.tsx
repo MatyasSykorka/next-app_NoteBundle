@@ -30,6 +30,8 @@ const NewNote: React.FC<noteWindowProps> = ( { isVisible, onClose } ) => {
                                         bg-amber-700
                                         p-7
                                         rounded-2xl
+                                        border-2
+                                        border-black
                                 "
                         >
                                 <p 

@@ -77,7 +77,6 @@ const DeleteFinishedNotes: React.FC<deleteFinishedProps> = ({ isVisibleIV, onClo
                                 >
                                         <p
                                                 className="
-                                                        font-bold
                                                         text-center
                                                         text-2xl
                                                 "

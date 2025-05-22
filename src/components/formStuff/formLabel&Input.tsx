@@ -1,4 +1,4 @@
-interface formItem {
+interface formItem extends React.InputHTMLAttributes<HTMLInputElement> {
         children: string;
         htmlFor: string;
         type: string;
@@ -9,7 +9,8 @@ const FORMITEM: React.FC<formItem> = ({
         children,
         htmlFor,
         type,
-        name
+        name,
+        ...tags
 }) => (
         <>        
                 <label
@@ -27,6 +28,7 @@ const FORMITEM: React.FC<formItem> = ({
                 <input
                         type={type}
                         name={name}
+                        {...tags}
                         className="
                                 place-self-center
                                 content-center

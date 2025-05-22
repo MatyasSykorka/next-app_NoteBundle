@@ -30,6 +30,8 @@ const DeleteNote: React.FC<deleteNoteProps> = ({ isVisibleII, onClose }) => {
                                         bg-amber-700
                                         p-7
                                         rounded-2xl
+                                        border-2
+                                        border-black
                                 "
                         >
                                 <p 
@@ -75,7 +77,6 @@ const DeleteNote: React.FC<deleteNoteProps> = ({ isVisibleII, onClose }) => {
                                 >
                                         <p
                                                 className="
-                                                        font-bold
                                                         text-center
                                                         text-2xl
                                                 "
