@@ -47,12 +47,17 @@ export default function Root() {
                                                 place-self-center
                                         "
                                 >
-                                        <SECITEM href="/login">
-                                                Login
+                                        {/* Make new function of button */}
+                                        <SECITEM 
+                                                href=""
+                                                
+                                        > 
+                                                Login with your github
                                         </SECITEM>
+                                        {/*
                                         <SECITEM href="/register">
                                                 Register
-                                        </SECITEM>
+                                        </SECITEM>*/}
                                 </menu>
                                 
                         </main>

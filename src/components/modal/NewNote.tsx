@@ -1,4 +1,5 @@
 import Form from "next/form";
+import FORMITEM from "../formStuff/formLabel&Input";
 
 interface noteWindowProps {
         isVisible: boolean;
@@ -63,40 +64,38 @@ const NewNote: React.FC<noteWindowProps> = ( { isVisible, onClose } ) => {
                                                 font-bold
                                                 text-white
                                                 text-4xl
+                                                mb-4
                                         "
                                 >
-                                        New note:
+                                        New note
                                 </h1>
-                                <label
-                                        className="
-                                                font-bold
-                                                text-xl
-                                        "
+                                {/*
+                                        <label
+                                                className="
+                                                        font-bold
+                                                        text-xl
+                                                "
+                                        >
+                                                Title:
+                                        </label>
+                                        <FORMITEM
+                                                htmlFor="username"
+                                                type="text"
+                                                name="username"
+                                        >
+                                                Username
+                                        </FORMITEM>
+                                */}
+                                <FORMITEM
+                                        type="text"
+                                        placeholder="Doctor"
+                                        name="noteTitle"
+                                        htmlFor="noteTitle"
+                                        required
                                 >
                                         Title:
-                                </label>
-                                <input 
-                                        type="text" 
-                                        placeholder="Doctor"
-                                        className="
-                                                bg-gray-100
-                                                text-black
-                                                w-50
-                                                h-8
-                                                p-1
-                                                rounded-sm
-                                        "
-                                />
+                                </FORMITEM>
                                 <div>
-                                        <input 
-                                                type="checkbox" 
-                                                name="priorityBox" 
-                                                id="priorityBox" 
-                                                className="
-                                                        size-4
-                                                "
-                                        />
-                                        &nbsp;
                                         <label 
                                                 className="
                                                         font-bold
@@ -105,10 +104,20 @@ const NewNote: React.FC<noteWindowProps> = ( { isVisible, onClose } ) => {
                                         >
                                                 High priority:
                                         </label>
+                                                &nbsp;
+                                        <input 
+                                                type="checkbox" 
+                                                name="priorityBox" 
+                                                id="priorityBox" 
+                                                className="
+                                                        size-4
+                                                "
+                                        />
                                 </div>
                                 <textarea 
                                         placeholder="Go to the doctor at 2pm"
-                                        className="
+                                        name="noteContent"
+                                        className={`
                                                 text-black
                                                 text-lg
                                                 bg-gray-100
@@ -119,7 +128,8 @@ const NewNote: React.FC<noteWindowProps> = ( { isVisible, onClose } ) => {
                                                 resize
                                                 p-3
                                                 rounded-sm
-                                        "
+                                        `}
+                                        required
                                 ></textarea>
                                 <button
                                         type="submit"
@@ -132,6 +142,7 @@ const NewNote: React.FC<noteWindowProps> = ( { isVisible, onClose } ) => {
                                                 duration-200
                                                 place-self-center
                                         "
+                                        // onClick={ () => onClose() }
                                 >
                                         Make a new note
                                 </button>

@@ -1,31 +1,28 @@
-'use client';
-import Link from "next/link";
-import TITLETXT from "@/components/title/title";
-import LABELBOOK from "@/components/usersBook/label";
+// 'use client';
+// import Link from "next/link";
+// import LABELBOOK from "@/components/usersBook/label";
 // import BTTNBOOK from "@/components/usersBook/bttnBook";
-import DeleteUser from "@/components/modal/DeleteUser";
-import { useState } from "react";
+// import DeleteUser from "@/components/modal/DeleteUser";
+// import { useState } from "react";
+import TITLETXT from "@/components/title/title";
 
-/*
+
 export const metadata = {
         title: 'Note bundle - User "username"',
         description: 'Note app by Maty',
 };
-*/
 
+
+/*
 interface setDeleteUser {
         isVisibleV: boolean;
 }
+*/
 
-interface labelBook {
-        children: string; 
-};
-
-
+/*
 interface UserBttn extends React.ButtonHTMLAttributes<HTMLButtonElement> {
         children: React.ReactNode;
 };
-
 
 const USERBTTN: React.FC<UserBttn> = ({
         children,
@@ -52,9 +49,31 @@ const USERBTTN: React.FC<UserBttn> = ({
                 {children}
         </button>
 );
+*/
+
+interface labelBook {
+children: string; 
+};
+const LABELBOOK: React.FC<labelBook> = ({
+
+children
+}) => (
+        <label
+                className="
+                        place-self-center
+                        flex
+                        text-2xl
+                        text-gray-200
+                        mb-4
+                        mt-3
+                "
+        >
+                {children}
+        </label>
+);
 
 
-const P: React.FC<labelBook> = ({
+const UsersInfo: React.FC<labelBook> = ({
         children
 }) => (
         <p
@@ -72,7 +91,7 @@ const P: React.FC<labelBook> = ({
 );
 
 export default function user() {
-        const [showDeleteUser, setShowDeleteUserModal] = useState(false);
+        // const [showDeleteUser, setShowDeleteUserModal] = useState(false);
 
         return (
                 <>
@@ -105,21 +124,32 @@ export default function user() {
                                 <LABELBOOK>
                                         Name:
                                 </LABELBOOK>
-                                <P>
+                                <UsersInfo>
                                         "Users name"
-                                </P>
+                                </UsersInfo>
                                 <LABELBOOK>
                                         Surname:
                                 </LABELBOOK>
-                                <P>
+                                <UsersInfo>
                                         "Users surname"
-                                </P>
+                                </UsersInfo>
                                 <LABELBOOK>
                                         Number of notes:
                                 </LABELBOOK>
-                                <P>
+                                <UsersInfo>
                                         "Number of users notes"
-                                </P>
+                                </UsersInfo>
+
+                                {
+                                /* 
+                                        Add Github profile picture 
+                                */
+                                }
+
+
+                                {/*
+                                // part of custom users concept
+
                                 <menu
                                         id="settings"
                                         className="
@@ -172,8 +202,9 @@ export default function user() {
                                                 Delete my account
                                         </button>
                                 </menu>
+                                */}
                         </main>
-                        <DeleteUser isVisibleV={showDeleteUser} onClose={ () => {setShowDeleteUserModal(false)} }/>
+                        {/* <DeleteUser isVisibleV={showDeleteUser} onClose={ () => {setShowDeleteUserModal(false)} }/> */}
                 </>
         );
 };

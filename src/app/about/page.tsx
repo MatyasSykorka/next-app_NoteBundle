@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import TITLETXT from "../../../components/title/title";
+import TITLETXT from "../../components/title/title";
 
 
 export default function About() {

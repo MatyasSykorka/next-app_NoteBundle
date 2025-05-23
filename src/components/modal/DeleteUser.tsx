@@ -26,9 +26,9 @@ const DeleteUser: React.FC<DeleteUserProps> = ({ isVisibleV, onClose }) => {
                                 className="
                                         flex
                                         flex-col
-                                        gap-3
+                                        gap-8
                                         bg-amber-700
-                                        p-7
+                                        p-8
                                         rounded-2xl
                                         border-2
                                         border-black

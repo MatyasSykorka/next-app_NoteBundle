@@ -28,10 +28,11 @@ const DeleteFinishedNotes: React.FC<deleteFinishedProps> = ({ isVisibleIV, onClo
                                         flex-col
                                         gap-3
                                         bg-amber-700
-                                        p-7
+                                        p-8
                                         rounded-2xl
                                         border-2
                                         border-black
+                                        gap-8
                                 "
                         >
                                 <p 
@@ -85,8 +86,6 @@ const DeleteFinishedNotes: React.FC<deleteFinishedProps> = ({ isVisibleIV, onClo
                                         </p>
                                 </div>
                                 <button
-                                        onClick={ () => onClose() }
-                                        // add function that sand sql querry to delete all notes
                                         type="submit"
                                         className="
                                                 bg-gray-400
@@ -99,8 +98,9 @@ const DeleteFinishedNotes: React.FC<deleteFinishedProps> = ({ isVisibleIV, onClo
                                                 hover:bg-gray-900
                                                 hover:text-white
                                         "
+                                        onClick={ () => onClose() }
                                 >
-                                        Yes, I want to have a clear space!
+                                        Yes, I want to have a clear desk!
                                 </button>
                         </Form>
                 </div>

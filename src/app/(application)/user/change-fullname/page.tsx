@@ -35,7 +35,7 @@ export default function Login() {
                                         htmlFor="actual_name"
                                         type="text"
                                         name="actual_name"
-                                        value="*your actual name*"
+                                        value={`* Actual your name *`}
                                         readOnly
                                 >
                                         Your actual name
